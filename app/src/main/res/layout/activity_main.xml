@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fariz.iakkopi.MainActivity">
+
+    <EditText
+        android:id="@+id/Snama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nama"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu"
+        android:textAllCaps="true"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/mSpinnerMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_width="80dp"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Topping"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/mRadioButtonItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate" />
+
+        <RadioButton
+            android:id="@+id/mRadioButtonItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matcha" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Quantity ="
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mButtonMin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="onClickMin"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/mTextQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/mButtonPlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="onClickPlus"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Sharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:text="$5"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Breset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReset"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/Border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="onClickOrder"
+            android:text="Order" />
+
+
+    </LinearLayout>
+</LinearLayout>
